@@ -48,7 +48,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
         holder.tvResultTitle.setText(result.getTitle());
         holder.tvResultReleaseDate.setText(String.valueOf(result.getReleaseDate()));
         holder.tvResultOverview.setText(result.getOverview());
-        Glide.with(context).load(result.getBackdropPath()).into(holder.ivResultPoster);
+        Glide.with(context).load("https://image.tmdb.org/t/p/w500" + result.getBackdropPath()).into(holder.ivResultPoster);
 
     }
 
